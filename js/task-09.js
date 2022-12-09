@@ -6,7 +6,7 @@ buttonEl.addEventListener("click", onButtonChangeBg);
 
 function onButtonChangeBg() {
   bodyEl.style.backgroundColor = `${getRandomHexColor()}`;
-  colorEl.textContent = `${getRandomHexColor()}`;
+  colorEl.textContent = `${bodyEl.style.backgroundColor}`;
 }
 
 function getRandomHexColor() {
